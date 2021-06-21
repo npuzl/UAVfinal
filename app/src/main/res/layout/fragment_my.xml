@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.my.MyFragment">
+
+
+    <!--当 android:orientation="vertical"  时， 只有水平方向的设置才起作用，垂直方向的设置不起作用。即：left，right，center_horizontal 是生效的。
+    当 android:orientation="horizontal" 时， 只有垂直方向的设置才起作用，水平方向的设置不起作用。即：top，bottom，center_vertical 是生效的。-->
+
+    <!--高斯模糊背景-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ic_sunset">
+
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="194dp"
+            android:text="飞行时长：9小时21分钟"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="175dp"
+            android:text="飞行里程：33.1公里"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_portrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_touxiang"
+            app:civ_border_color="#fffcfc"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/civ_user_portrait"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="赵铁柱"
+            android:textColor="#d4f4f0f0"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/tv_person_information"
+        style="@style/UserInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/ic_mydata"
+        android:drawableRight="@drawable/ic_qianjin"
+        android:text="@string/person_information"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        app:backgroundTint="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/tv_settings"
+        style="@style/UserInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/ic_settings"
+        android:drawableRight="@drawable/ic_qianjin"
+        android:text="@string/settings"
+        android:textSize="14dp"
+        app:backgroundTint="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/tv_more_information"
+        style="@style/UserInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/ic_gengduo"
+        android:drawableRight="@drawable/ic_qianjin"
+        android:text="@string/more_information"
+        android:textSize="14dp"
+        app:backgroundTint="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/tv_logout"
+        style="@style/UserInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/ic_tuichu_"
+        android:drawableRight="@drawable/ic_qianjin"
+        android:text="@string/logout"
+        android:textColor="#DDE53935"
+        android:textSize="14dp"
+        app:backgroundTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/to_imgtest"
+        style="@style/UserInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:drawableRight="@drawable/ic_qianjin"
+        android:text="imgtest"
+        android:textColor="#DD000000"
+        android:textSize="14dp"
+        app:backgroundTint="#FFFFFF" />
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="camera" type="id"></item>
+    <item name="signal" type="id"></item>
+    <item name="Compass" type="id"></item>
+    <item name="CameraCapturePanel" type="id"></item>
+    <item name="fpv_container" type="id" />
+    <item name="fpv_widget" type="id" />
+    <item name="fpv_overlay_widget" type="id" />
+    <item name="TakeOffReturnPanel" type="id" />
+    <item name="secondary_video_view" type="id" />
+    <item name="secondary_fpv_widget" type="id" />
+    <item name="remaining_flight_time" type="id" />
+    <item name="camera2" type="id" />
+    <item name="dashboard_widget" type="id" />
+    <item name="rtk_panel" type="id" />
+    <item name="pre_flight_check_list" type="id" />
+    <item name="spotlight_panel" type="id" />
+    <item name="speaker_panel" type="id" />
+    <item name="map_widget" type="id" />
+</resources>

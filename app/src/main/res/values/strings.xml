@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ToSky</string>
+    <string name="device">设备</string>
+    <string name="gallery">图库</string>
+    <string name="my">我的</string>
+    <string name="picture">照片</string>
+    <string name="video">视频</string>
+    <string name="new_color">New Color</string>
+    <string name="sync">Sync</string>
+    <string name="mapbox_id">Please enter the map box key here.</string>
+    <string name="error_map_not_initialized">The map has not been initialized yet</string>
+    <string name="start_fly">开始飞行</string>
+
+    <string name="person_information">个人资料</string>
+    <string name="settings">设置</string>
+    <string name="more_information">更多</string>
+    <string name="logout">退出账号</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

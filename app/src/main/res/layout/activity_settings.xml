@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.SettingsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/settings_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/white" />
+
+
+
+        <!--
+                以水平方向为例，当layout_width都设置为match_parent时，
+                layout_weight比重值越大，占的比例越小；
+                当layout_width都设置为wrap_content/0dp时，
+                layout_weight比重值越大，占的比例越大
+        -->
+
+
+        <Button
+            android:id="@+id/datacache"
+            style="@style/UserInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_qianjin"
+            android:text="清除缓存"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/privacy"
+            style="@style/UserInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_qianjin"
+            android:text="隐私设置"
+            android:textSize="18sp"
+            app:backgroundTint="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/communicate"
+            style="@style/UserInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_qianjin"
+            android:text="联系我们"
+            android:textSize="18sp"
+            app:backgroundTint="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/update"
+            style="@style/UserInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_qianjin"
+            android:text="检测更新"
+            android:textSize="18sp"
+            app:backgroundTint="#FFFFFF" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+
+        <!--个人简介-->
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

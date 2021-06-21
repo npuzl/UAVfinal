@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.tensorflow.lite">
+
+    <uses-sdk tools:overrideLibrary="com.dji.uavapp" />
+</manifest>

@@ -1,0 +1,152 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "2c34f28174b43da388a025c59258c18f",
+    "entities": [
+      {
+        "tableName": "User",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`userID` TEXT NOT NULL, `nickName` TEXT, `FlightSumDistance` INTEGER NOT NULL, `FlightSumTime` INTEGER NOT NULL, PRIMARY KEY(`userID`))",
+        "fields": [
+          {
+            "fieldPath": "userID",
+            "columnName": "userID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nickName",
+            "columnName": "nickName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FlightSumDistance",
+            "columnName": "FlightSumDistance",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "FlightSumTime",
+            "columnName": "FlightSumTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "userID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Gallery",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`GalleryId` INTEGER NOT NULL, `GalleryUserID` TEXT, `type` TEXT, `size` INTEGER NOT NULL, `location` TEXT, `time` TEXT, PRIMARY KEY(`GalleryId`))",
+        "fields": [
+          {
+            "fieldPath": "GalleryId",
+            "columnName": "GalleryId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "GalleryUserID",
+            "columnName": "GalleryUserID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "size",
+            "columnName": "size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "time",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "GalleryId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Flight",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`FlightID` INTEGER NOT NULL, `FlightUserID` TEXT, `FlightStartTime` TEXT, `FlightEndTime` TEXT, `Path` TEXT, `PathMedium` TEXT, PRIMARY KEY(`FlightID`))",
+        "fields": [
+          {
+            "fieldPath": "FlightID",
+            "columnName": "FlightID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "FlightUserID",
+            "columnName": "FlightUserID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FlightStartTime",
+            "columnName": "FlightStartTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FlightEndTime",
+            "columnName": "FlightEndTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Path",
+            "columnName": "Path",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "PathMedium",
+            "columnName": "PathMedium",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "FlightID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2c34f28174b43da388a025c59258c18f')"
+    ]
+  }
+}

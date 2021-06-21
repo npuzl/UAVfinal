@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@+id/navigation_device">
+    <fragment
+        android:id="@+id/navigation_device"
+        android:name="com.dji.uavapp.UI.device.DeviceFragment"
+        android:label="@string/device"
+        tools:layout="@layout/fragment_device">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.dji.uavapp.UI.gallery.GalleryFragment"
+        android:label="@string/gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_navigation_gallery_to_navigation_video"
+            app:destination="@id/navigation_video" />
+        <action
+            android:id="@+id/action_navigation_gallery_to_cloudFragment"
+            app:destination="@id/cloudFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_my"
+        android:name="com.dji.uavapp.UI.my.MyFragment"
+        android:label="@string/my"
+        tools:layout="@layout/fragment_my" />
+    <fragment
+        android:id="@+id/navigation_video"
+        android:name="com.dji.uavapp.UI.video.VideoFragment"
+        android:label="VideoFragment" >
+        <action
+            android:id="@+id/action_navigation_video_to_navigation_gallery"
+            app:destination="@id/navigation_gallery" />
+        <action
+            android:id="@+id/action_navigation_video_to_cloudFragment"
+            app:destination="@id/cloudFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cloudFragment"
+        android:name="com.dji.uavapp.UI.cloud.CloudFragment"
+        android:label="fragment_cloud"
+        tools:layout="@layout/fragment_cloud" >
+        <action
+            android:id="@+id/action_cloudFragment_to_navigation_video"
+            app:destination="@id/navigation_video" />
+        <action
+            android:id="@+id/action_cloudFragment_to_navigation_gallery"
+            app:destination="@id/navigation_gallery" />
+    </fragment>
+</navigation>

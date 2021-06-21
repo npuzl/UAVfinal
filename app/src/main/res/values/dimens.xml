@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="map_settings_seperator">15dp</dimen>
+    <dimen name="map_settings_item_seperator">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

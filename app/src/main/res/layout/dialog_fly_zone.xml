@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textColor="@color/dark_gray" />
+
+        <CheckBox
+            android:id="@+id/auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all"
+            android:text="Authorization"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/auth_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/auth"
+            android:layout_alignParentRight="true"
+            android:background="#ffff00"
+            android:text="@string/new_color" />
+
+        <CheckBox
+            android:id="@+id/warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/auth"
+            android:text="Warning"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/warning_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/warning"
+            android:layout_alignParentRight="true"
+            android:background="#00ff00"
+            android:text="@string/new_color" />
+
+        <CheckBox
+            android:id="@+id/enhanced_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warning"
+            android:text="Enhanced Warning"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/enhanced_warning_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/enhanced_warning"
+            android:layout_alignParentRight="true"
+            android:background="#00ff00"
+            android:text="@string/new_color" />
+
+        <CheckBox
+            android:id="@+id/restricted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enhanced_warning"
+            android:text="Restricted"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/restricted_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/restricted"
+            android:layout_alignParentRight="true"
+            android:background="#ff0000"
+            android:text="@string/new_color" />
+
+        <TextView
+            android:id="@+id/max_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restricted"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="Maximum Height"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/max_height_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/max_height"
+            android:layout_alignParentRight="true"
+            android:background="#000000"
+            android:text="@string/new_color" />
+
+        <TextView
+            android:id="@+id/self_unlocked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/max_height"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="4dp"
+            android:text="Self Unlocked"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/self_unlock_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/self_unlocked"
+            android:layout_alignParentRight="true"
+            android:background="#9C27B0"
+            android:text="@string/new_color" />
+
+        <View
+            android:id="@+id/custom_unlock_separator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/self_unlocked"
+            android:layout_margin="5dp"
+            android:background="@color/blue" />
+
+        <Switch
+            android:id="@+id/custom_unlock_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom_unlock_separator"
+            android:layout_margin="5dp"
+            android:text="Custom Unlocked Zone"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/custom_unlock_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom_unlock_switch"
+            android:layout_alignParentRight="true"
+            android:background="@color/light_gray"
+            android:enabled="false"
+            android:text="@string/new_color" />
+
+        <Button
+            android:id="@+id/custom_unlock_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom_unlock_switch"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/custom_unlock_color"
+            android:background="@color/light_gray"
+            android:enabled="false"
+            android:text="@string/sync" />
+
+        <View
+            android:id="@+id/custom_unlock_separator2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/custom_unlock_color"
+            android:layout_margin="5dp"
+            android:background="@color/blue" />
+    </RelativeLayout>
+
+</merge>
