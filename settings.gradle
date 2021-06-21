@@ -1,0 +1,7 @@
+include ':opencv452'
+include ':lib_task_apii'
+include ':lib_interpreterr'
+include ':app'
+rootProject.name = "UAVapp"
+project(':lib_interpreterr').projectDir = new File(rootDir, 'lib_interpreter/')
+project(':lib_task_apii').projectDir = new File(rootDir, 'lib_task_api/')
