@@ -20,9 +20,9 @@ import androidx.core.content.ContextCompat;
 import com.dji.uavapp.R;
 import com.dji.uavapp.util.netutil.ServerService;
 
-import org.opencv.android.BaseLoaderCallback;
-import org.opencv.android.LoaderCallbackInterface;
-import org.opencv.android.OpenCVLoader;
+//import org.opencv.android.BaseLoaderCallback;
+//import org.opencv.android.LoaderCallbackInterface;
+//import org.opencv.android.OpenCVLoader;
 
 import java.util.ArrayList;
 import java.util.List;

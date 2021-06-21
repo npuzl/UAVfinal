@@ -18,9 +18,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.dji.uavapp.R;
 
-import org.opencv.android.Utils;
-import org.opencv.core.Mat;
-import org.opencv.imgproc.Imgproc;
+//import org.opencv.android.Utils;
+//import org.opencv.core.Mat;
+//import org.opencv.imgproc.Imgproc;
 
 
 public class ImgTestActivity extends AppCompatActivity {
@@ -36,19 +36,19 @@ public class ImgTestActivity extends AppCompatActivity {
         //processImg();
     }
 
-    private void processImg() {
-        // 这一行可以更改成 BitmapFactory.decodeFile 来加载文件中的图片
-        Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.fire);
-
-        Mat src = new Mat();
-        Mat des = new Mat();
-        Utils.bitmapToMat(bitmap, src);
-        Imgproc.cvtColor(src, des, Imgproc.COLOR_BGR2GRAY);
-        Utils.matToBitmap(des, bitmap);
-        imageView.setImageBitmap(bitmap);
-        src.release();
-        des.release();
-    }
+//    private void processImg() {
+//        // 这一行可以更改成 BitmapFactory.decodeFile 来加载文件中的图片
+//        Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.fire);
+//
+//        Mat src = new Mat();
+//        Mat des = new Mat();
+//        Utils.bitmapToMat(bitmap, src);
+//        Imgproc.cvtColor(src, des, Imgproc.COLOR_BGR2GRAY);
+//        Utils.matToBitmap(des, bitmap);
+//        imageView.setImageBitmap(bitmap);
+//        src.release();
+//        des.release();
+//    }
 //
 //    private void iniLoadOpencv() {
 //        boolean success = OpenCVLoader.initDebug();
